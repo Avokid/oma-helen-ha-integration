@@ -38,7 +38,9 @@ mv omahelen/custom_components/helen_energy/ .
 oma_helen_username: <USERNAME>
 oma_helen_password: <PASSWORD>
 ```
-3. Add a new sensor with `helen_energy` platform to the `configuration.yaml`.
+3. Restart HA
+   
+4. Add a new sensor with `helen_energy` platform to the `configuration.yaml`.
 ```yaml
 sensor:
   - platform: helen_energy
@@ -60,7 +62,7 @@ sensor:
 - `default_unit_price` optional value if you want to set a fixed unit price for your energy – if not set, the unit price will be automatically fetched. Note that the `default_unit_price` does not have an effect with the `EXCHANGE` contract type.
 - `include_transfer_costs` optional boolean for fetching energy transfer costs for the on-going month - shows `0.0` if Helen is not your transfer company
 
-4. Restart HA
+5. Restart HA
 
 ### How to interpret the entitites
 
